@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jarditou</title>
+    <link rel="stylesheet" href="styles.css" media="all" type="text/css"/>
+</head>
+<body>
+    <div id="jarditou">
+    <img src="images\jarditou_logo.jpg" width="850" height="200">
+    </div>
+    <p><h2>La qualité depuis 70 ans</h2></p>
+    <div>
+        <ul type ="square"> 
+            <li><h2><a href="index.html">Accueil</a></h2></li>
+            <li><h2><a href="tableau.html">Tableau</a></h2></li>
+            <li><h2><a href="#contact" title="Aller à la cible">Contact</a></h2></li>
+          </ul>
+    </div>
+    <img src="images\promotion.jpg" width="1890" height="350">
+    <p id="Contact"><h1>Contact</h1></p>
+    <hr width="100%" SIZE="2" ALIGN="left">
+    <p>* Ces zones sont obligatoires</p>
+    <fieldset>
+    <legend>Vos coordonnées</legend>
+    <form action="destination.php" method="post" id="formulaire">
+    <label for="nom">Nom* :</label>  <input type="text" name="nom"><br><br>
+    <label for="prénom">Prénom* :</label><input type="text" name="prénom"><br><br>
+    </form> 
+    <form action="">
+    <label for="sexe">Sexe* :</label><input type="radio" name="sexe">Masculin  <input type="radio" name="sexe">Féminin<br><br>
+    <label for="Date de naissance">Date de naissance* </label><input id="date" type="date" value="2021-05-01"><br><br>
+    <label for="Code postal">Code postal* :</label><input type="number" name="Code postal"><br><br>
+    <label for="Adresse">Adresse :</label><input type="text" name="Adresse"><br><br>
+    <label for="Ville">Ville :</label><input type="text" name="Ville"><br><br>
+    <label for="Email">Email* :</label><input placeholder="adressemail@xxx.fr" type="email" id="email" name="Email"><br><br>
+    </div>
+</fieldset><br>
+<fieldset>
+    <legend>Votre demande :</legend>
+    <label for="Sujet">Sujet* :</label><select name="Sujet*" size="1">
+        <OPTION>Veuillez sélectionner un sujet
+        <OPTION>commandes
+    </select><br><br>
+        <label for="Votre question">Votre question* :</label><textarea rows="5" cols="40" name="question"></textarea><br><br>
+</fieldset>
+    <div id="align">
+    <input type="checkbox" name="ok" id="ok"/>* J'acepte le traitement informatique de ce formulaire<br><br>
+    <input type="submit" value="Envoyer">
+    <input type="reset" value="Annuler"><br><br>
+</div>
+</form>  
+</body>
+</html>
